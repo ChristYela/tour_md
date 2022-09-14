@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Tour</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{url_for ('static',filename='css/style_show.css')}}">
+    <link rel = "stylesheet" media = "only screen and (max-width: 768px)" href = "estilos.css">
+    <script src="https://kit.fontawesome.com/865f2bfd48.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/dashboard" id="headr">Que Chimba Medallo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/dashboard">Back</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/logout">Log Out</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="body2">
+        <div class="container">
+            <div class="colu2">
+
+                <h1>{{tour.place_name}}</h1>
+                <div>
+                    <div class="let">
+                        <p><img src = "{{tour.image}}" alt= "image" class="image"></p>
+                        <p>Description: {{tour.description}}</p>
+                        <p>Location: {{tour.location}}</p>
+                        <p>Price range: {{tour.price_range}}</p>
+                        <p>Schedule: {{tour.schedule}}</p>
+                        <p>Reference place: {{tour.reference_place}}</p>
+                    </div>
+
+                    {% with messages = get_flashed_messages(category_filter=['places']) %}
+                    {% if messages %}
+                    <div class="alert alert-danger">
+                        {% for message in messages %}
+                        <p>{{message}}</p>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                    {% endwith %}
+
+                    {% for key, value in data.items () %}
+                    {%if key.id == tour.id %}
+                    <form action="/places" method="post">
+                        <input type="hidden" name="user_id" value="{{ user.id }}">
+                        <input type="hidden" name="place_id" value="{{ key.id }}">
+                        <label for="like">{{value}}</label>
+                        <input type="submit" id="like" value="likes" class="btn btn-outline-light">
+                    </form>
+                    {%endif%}
+                    {%endfor%}
+                </div>
+                <form action="/comments" method="post"><br>
+                    <input type="hidden" name="place_id" value="{{ tour.id }}">
+                    <input type="hidden" name="user_id" value="{{ user.id }}">
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1"> Leave a review</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" name="comments"
+                            rows="3"></textarea><br>
+                        <input type="submit" id="comments" value="Post" class="btn btn-outline-secondary">
+                    </div>
+                </form>
+            </div>
+            <div>
+                <h2 class="titllemaik">Reviews</h2>
+
+                <div id="maikauto">
+                    <p class="mt-5 mb-5">
+                    <div>
+                        {% for comments in comments %}
+                        <div>{{comments.comments}} </div>
+                        <b>Published by:</b> {{user.first_name}} {{user.last_name}}
+                        {% endfor %}
+                    </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+    </div>
+
+</body>
+
+</html>

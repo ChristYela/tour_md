@@ -1,0 +1,56 @@
+#body2 {
+    background: rgba(0, 0, 0, 0.7) url("../img/m3.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    color: white;
+    height: 100%;
+
+}
+
+
+#headr {
+    
+    
+    margin-left: 50px;
+
+}
+
+
+#carouselExampleIndicators {
+    width: 120px;
+padding-right: 20px;
+}
+
+
+#multi-item-example {
+    width: 60rem;
+
+}
+
+html, body{
+    height:100%;
+    margin:0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media only screen and (min-width: 600px) {
+    html {
+    zoom: .8;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    html {
+    zoom: .9;        
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    html {
+    zoom: 1;
+    }
+}
+

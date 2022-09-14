@@ -1,0 +1,249 @@
+@media only screen and (min-width: 600px) {
+    html {
+      zoom: .8;
+    }
+    #body2 {
+        background: rgba(0, 0, 0, 0.7) url("../img/medellin.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-blend-mode: darken;
+        color: white;
+        height: 100%;
+        padding: 25px;
+        width: 100%;
+    
+    }z
+    
+    .image{
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-left: 65px;
+        width: 300px;
+        height: 180px;
+    }
+    
+    #comments {
+        margin-left: 12px;
+    }
+    
+    #maikauto {
+        margin-left: 3rem;
+        height: 24rem;
+        width: 20rem;
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
+    }
+    
+    #maikauto::-webkit-scrollbar {
+        background-color: darkgray;
+        border-radius: 7rem;
+    }
+    
+    .titllemaik {
+        margin-left: 3rem;
+        padding-top: 28px;
+    
+    }
+    
+    
+    
+    .container {
+        display: flex;
+        margin-left: 12.5rem;
+        height:100%;
+    
+    }
+    
+    .like {
+        color: blueviolet;
+    }
+    
+    .colu2 {
+        background: rgba(255, 255, 255, 0.05);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        width: 520px;
+        height:890px;
+        margin-left: 1rem;
+        padding: 20px;
+    }
+    
+    #headr{
+        margin-left: 40px;
+    }
+    
+    [class*="col-"] {
+        width: 100%;
+      }
+
+  }
+
+  @media only screen and (min-width: 800px) {
+    html {
+      zoom: .9;        
+    }
+    #body2 {
+        background: rgba(0, 0, 0, 0.7) url("../img/medellin.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-blend-mode: darken;
+        color: white;
+        height: 100%;
+        padding: 25px;
+        width: 100%;
+    
+    }z
+    
+    .image{
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-left: 65px;
+        width: 300px;
+        height: 180px;
+    }
+    
+    #comments {
+        margin-left: 12px;
+    }
+    
+    #maikauto {
+        margin-left: 3rem;
+        height: 24rem;
+        width: 20rem;
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
+    }
+    
+    #maikauto::-webkit-scrollbar {
+        background-color: darkgray;
+        border-radius: 7rem;
+    }
+    
+    .titllemaik {
+        margin-left: 3rem;
+        padding-top: 28px;
+    
+    }
+    
+    
+    
+    .container {
+        display: flex;
+        margin-left: 12.5rem;
+        height:100%;
+    
+    }
+    
+    .like {
+        color: blueviolet;
+    }
+    
+    .colu2 {
+        background: rgba(255, 255, 255, 0.05);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        width: 520px;
+        height:890px;
+        margin-left: 1rem;
+        padding: 20px;
+    }
+    
+    #headr{
+        margin-left: 40px;
+    }
+    
+    [class*="col-"] {
+        width: 100%;
+      }
+
+  }
+
+  @media only screen and (min-width: 1000px) {
+    html {
+      zoom: 1;
+    }
+    #body2 {
+        background: rgba(0, 0, 0, 0.7) url("../img/medellin.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-blend-mode: darken;
+        color: white;
+        height: 100%;
+        padding: 25px;
+        width: 100%;
+    
+    }z
+    
+    .image{
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-left: 65px;
+        width: 300px;
+        height: 180px;
+    }
+    
+    #comments {
+        margin-left: 12px;
+    }
+    
+    #maikauto {
+        margin-left: 3rem;
+        height: 24rem;
+        width: 20rem;
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
+    }
+    
+    #maikauto::-webkit-scrollbar {
+        background-color: darkgray;
+        border-radius: 7rem;
+    }
+    
+    .titllemaik {
+        margin-left: 3rem;
+        padding-top: 28px;
+    
+    }
+    
+    
+    
+    .container {
+        display: flex;
+        margin-left: 12.5rem;
+        height:100%;
+    
+    }
+    
+    .like {
+        color: blueviolet;
+    }
+    
+    .colu2 {
+        background: rgba(255, 255, 255, 0.05);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        width: 520px;
+        height:890px;
+        margin-left: 1rem;
+        padding: 20px;
+    }
+    
+    #headr{
+        margin-left: 40px;
+    }
+    
+    [class*="col-"] {
+        width: 100%;
+      }
+
+  }
+
